@@ -1,8 +1,8 @@
 # ML App
 
-##Documentación
-
-####Contenido:
+## Documentación
+ 
+#### Contenido:
 
 * View
 Contiene 2 Archivos de tipo Activity:
@@ -25,7 +25,7 @@ Contiene 2 Archivos de tipo Activity:
 	Contiene el Archivo Connector el cual devuelve la url en base a BASE_URL, uri y query params, dependiendo 
 	cada uno sea el caso.
 
-####Flujo:
+#### Flujo:
 1) Activity Splash redirige al Main
 2) El Main instancia su primer fragment: AmountFragment.
 3) En este Fragment solo se acepta en su EditText los siguientes caracteres: "1234567890", una vez ingresado,
