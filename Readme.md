@@ -49,6 +49,6 @@ Por Falta de tiempo me hubiera gustado agregar y terminar:
 * Agregar imagenes más ilustrativas
 
 
-### Ignacio Galliano
+### Autor: Ignacio Galliano
 
 
