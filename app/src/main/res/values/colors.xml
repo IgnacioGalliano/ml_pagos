@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/yellowML</color>
+    <color name="colorPrimaryDark">@color/yellowML</color>
+    <color name="colorAccent">@color/yellowML</color>
+    <color name="yellowML">#FCE500</color>
+    <color name="blueBorder">#40A5FF</color>
+</resources>
