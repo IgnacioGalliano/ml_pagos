@@ -6,10 +6,10 @@
 
 package com.mercadolibre.pagos.view.interfaces;
 
-import com.mercadolibre.pagos.view.models.Card;
-import com.mercadolibre.pagos.view.models.Installments;
-import com.mercadolibre.pagos.view.models.PayerCost;
-import com.mercadolibre.pagos.view.models.PaymentMethods;
+import com.mercadolibre.pagos.models.Card;
+import com.mercadolibre.pagos.models.Installments;
+import com.mercadolibre.pagos.models.PayerCost;
+import com.mercadolibre.pagos.models.PaymentMethods;
 
 /**
  * Created By Ignacio Galliano

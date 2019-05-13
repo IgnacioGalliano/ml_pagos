@@ -4,7 +4,7 @@
  *
  */
 
-package com.mercadolibre.pagos.view.models;
+package com.mercadolibre.pagos.models;
 
 import com.google.gson.JsonObject;
 

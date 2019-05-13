@@ -21,11 +21,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.mercadolibre.pagos.R;
 import com.mercadolibre.pagos.view.interfaces.ListSelectedCallListener;
-import com.mercadolibre.pagos.view.models.Card;
-import com.mercadolibre.pagos.view.models.Installments;
-import com.mercadolibre.pagos.view.models.ItemList;
-import com.mercadolibre.pagos.view.models.PayerCost;
-import com.mercadolibre.pagos.view.models.PaymentMethods;
+import com.mercadolibre.pagos.models.Card;
+import com.mercadolibre.pagos.models.Installments;
+import com.mercadolibre.pagos.models.ItemList;
+import com.mercadolibre.pagos.models.PayerCost;
+import com.mercadolibre.pagos.models.PaymentMethods;
 
 import java.util.ArrayList;
 

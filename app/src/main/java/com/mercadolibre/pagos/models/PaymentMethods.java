@@ -4,11 +4,9 @@
  *
  */
 
-package com.mercadolibre.pagos.view.models;
+package com.mercadolibre.pagos.models;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.mercadolibre.pagos.view.enums.PaymentMethodTypeId;
 
 import java.util.ArrayList;
 

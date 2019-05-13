@@ -27,15 +27,14 @@ import com.mercadolibre.pagos.view.MainActivity;
 import com.mercadolibre.pagos.view.adapters.SelectListAdapter;
 import com.mercadolibre.pagos.view.interfaces.DataComunication;
 import com.mercadolibre.pagos.view.interfaces.ListSelectedCallListener;
-import com.mercadolibre.pagos.view.models.Card;
-import com.mercadolibre.pagos.view.models.Installments;
-import com.mercadolibre.pagos.view.models.ItemList;
-import com.mercadolibre.pagos.view.models.PayerCost;
-import com.mercadolibre.pagos.view.models.PaymentMethods;
+import com.mercadolibre.pagos.models.Card;
+import com.mercadolibre.pagos.models.Installments;
+import com.mercadolibre.pagos.models.ItemList;
+import com.mercadolibre.pagos.models.PayerCost;
+import com.mercadolibre.pagos.models.PaymentMethods;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**

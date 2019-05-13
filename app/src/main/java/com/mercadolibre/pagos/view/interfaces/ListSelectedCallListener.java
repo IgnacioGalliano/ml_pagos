@@ -6,7 +6,7 @@
 
 package com.mercadolibre.pagos.view.interfaces;
 
-import com.mercadolibre.pagos.view.models.ItemList;
+import com.mercadolibre.pagos.models.ItemList;
 
 /**
  * Created By Ignacio Galliano

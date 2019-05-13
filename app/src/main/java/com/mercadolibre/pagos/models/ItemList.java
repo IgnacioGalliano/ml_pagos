@@ -4,7 +4,7 @@
  *
  */
 
-package com.mercadolibre.pagos.view.models;
+package com.mercadolibre.pagos.models;
 
 /**
  * Created By Ignacio Galliano
