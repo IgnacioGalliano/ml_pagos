@@ -41,6 +41,12 @@ Contiene 2 Archivos de tipo Activity:
    con los valores seleccionados y pone en nulo paymentMethosSelected, cardSelected, amount, payerCost, para al final redirigir a 
    AmountFragment.
    
+#### TODO:
+Por Falta de tiempo me hubiera gustado agregar y terminar:
+* Tipografia personalizada.
+* Repasar los modelados, ya que si bien los que uso estan ok, hay algunos que los hice rapido e incompleto.
+* Agregar un placeholder para cuando las listas estan vacias, ya que ahora si devuelve vacia, muestra la pantalla en blanco.
+* Agregar imagenes más ilustrativas
 
 
 ### Ignacio Galliano
