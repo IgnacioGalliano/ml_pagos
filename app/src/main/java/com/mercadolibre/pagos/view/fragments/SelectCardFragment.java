@@ -55,7 +55,7 @@ public class SelectCardFragment extends Fragment {
                 if(mCallback.getCardSelected() != null){
                     activity.switchContent( new SelectInstallmentFragment(), true);
                 }else{
-                    activity.showAlert("Atención!","Por favor selecciona una tarjeta.");
+                    activity.showAlert("Atención!","Por favor selecciona una tarjeta.", false);
                 }
 
             }

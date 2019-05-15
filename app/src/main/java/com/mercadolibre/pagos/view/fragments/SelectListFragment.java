@@ -58,7 +58,6 @@ public class SelectListFragment extends Fragment implements ListSelectedCallList
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-
         initListeners();
 
         return view;
@@ -139,6 +138,9 @@ public class SelectListFragment extends Fragment implements ListSelectedCallList
                             recyclerView.setAdapter(mAdapter);
                             mAdapter.notifyDataSetChanged();
 
+                            if(arrayList.isEmpty()){
+                                activity.showAlert("Atencion!","Parece que este metodo de pago no contiene ninguna tarjeta!", true);
+                            }
 
                         }else{
                             activity.dismissProgress();
@@ -192,9 +194,12 @@ public class SelectListFragment extends Fragment implements ListSelectedCallList
     public void cellPressed(ItemList item) {
         if(item instanceof PaymentMethods){
             mCallback.setPaymentMethosSelected((PaymentMethods) item);
+            mCallback.setCardSelected(null);
+            mCallback.setPayerCost(null);
         }
         if(item instanceof Card){
             mCallback.setCardSelected((Card) item);
+            mCallback.setPayerCost(null);
         }
         if(item instanceof PayerCost){
             mCallback.setPayerCost((PayerCost) item);

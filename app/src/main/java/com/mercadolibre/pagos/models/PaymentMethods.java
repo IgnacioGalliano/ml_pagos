@@ -8,6 +8,8 @@ package com.mercadolibre.pagos.models;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 /**
@@ -23,11 +25,11 @@ public class PaymentMethods extends ItemList {
     private String thumbnail;
     private String deferred_capture;
     private ArrayList<SettingsPaymentMethods>  settingsArray;
-    //private ArrayList<String> additional_info_needed
+    private ArrayList<String> additionalInfoNeeded;
     private Double min_allowed_amount;
     private Double max_allowed_amount;
     private String accreditation_time;
-    //private ArrayList<String> financial_institutions
+    private ArrayList<String> financialInstitutions;
     private String processing_modes;
 
     public PaymentMethods(){}
@@ -99,6 +101,27 @@ public class PaymentMethods extends ItemList {
         } else {
             this.processing_modes = null;
         }
+
+        if (obj.has("additional_info_needed") && !obj.get("additional_info_needed").isJsonNull()) {
+            JsonArray array = obj.get("additional_info_needed").getAsJsonArray();
+            additionalInfoNeeded =  new ArrayList<>();
+            for(int i = 0; i < array.size(); i++){
+                additionalInfoNeeded.add(array.get(i).getAsString());
+            }
+        } else {
+            this.additionalInfoNeeded = new ArrayList<>();
+        }
+
+        if (obj.has("financial_institutions") && !obj.get("financial_institutions").isJsonNull()) {
+            JsonArray array = obj.get("financial_institutions").getAsJsonArray();
+            financialInstitutions =  new ArrayList<>();
+            for(int i = 0; i < array.size(); i++){
+                financialInstitutions.add(array.get(i).getAsString());
+            }
+        } else {
+            this.financialInstitutions = new ArrayList<>();
+        }
+
 
         if (obj.has("settings") && !obj.get("settings").isJsonNull()) {
             settingsArray = new ArrayList<>();

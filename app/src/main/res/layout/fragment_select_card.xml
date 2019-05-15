@@ -21,7 +21,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/mercado_libre"/>
+                android:src="@drawable/creditcard"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -29,7 +29,8 @@
                 android:layout_gravity="center"
                 android:text="Seleccione una tarjeta por favor"
                 android:textColor="#000"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gothamroundedbook"/>
 
             <FrameLayout
                 android:id="@+id/selectCardButton"
@@ -47,7 +48,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="N/A Seleccionada"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:fontFamily="@font/gothamroundedbook"/>
 
             </FrameLayout>
 
@@ -65,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:text="Siguiente"
                     android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/gothamroundedbold"/>
 
             </RelativeLayout>
 

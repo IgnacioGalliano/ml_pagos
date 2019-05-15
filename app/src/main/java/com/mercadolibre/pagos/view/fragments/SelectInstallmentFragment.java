@@ -56,14 +56,14 @@ public class SelectInstallmentFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(mCallback.getPayerCost() != null){
-                    activity.showAlert("¡Has Finalizado!", "Monto: "+ mCallback.getAmount() + "\n Medio de pago : " + mCallback.getPaymentMethosSelected().getId() + "\n Tarjeta: " + mCallback.getCardSelected().getName() + "\n Cuotas: " + mCallback.getPayerCost().getRecommendedMessage());
+                    activity.showAlert("¡Has Finalizado!", "Monto: "+ mCallback.getAmount() + "\n Medio de pago : " + mCallback.getPaymentMethosSelected().getId() + "\n Tarjeta: " + mCallback.getCardSelected().getName() + "\n Cuotas: " + mCallback.getPayerCost().getRecommendedMessage(), false);
                     mCallback.setAmount(null);
                     mCallback.setPayerCost(null);
                     mCallback.setCardSelected(null);
                     mCallback.setPaymentMethosSelected(null);
                     activity.switchContent( new AmountFragment(), false);
                 }else{
-                    activity.showAlert("Atención!","Por favor selecciona la cantidad de cuotas.");
+                    activity.showAlert("Atención!","Por favor selecciona la cantidad de cuotas.", false);
                 }
 
             }

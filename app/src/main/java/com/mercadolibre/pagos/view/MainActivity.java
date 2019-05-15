@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements DataComunication 
         }
     }
 
-    public void showAlert(String titleAlert, String message) {
+    public void showAlert(String titleAlert, String message, final boolean goBrack) {
 
 
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements DataComunication 
             @Override
             public void onClick(View v) {
                 alert.dismiss();
+                if(goBrack){onBackPressed();}
             }
         });
         alert.setOnDismissListener(new DialogInterface.OnDismissListener() {

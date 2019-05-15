@@ -29,9 +29,9 @@ Contiene 2 Archivos de tipo Activity:
 1) Activity Splash redirige al Main
 2) El Main instancia su primer fragment: AmountFragment.
 3) En este Fragment solo se acepta en su EditText los siguientes caracteres: "1234567890", una vez ingresado,
-   se presiona en siguiente y redirige a SelectPaymentMethodFragment, en caso de estar vacio muestra Mensaje de Alerta.
-4) En SelectPaymentMethodFragment se selecciona el metodo de pago, para ello al presionar la opcion, nos redirige hacia 
-   la lista con stateListSelect en 1, donde podremos seleccionarlo, al hacerlo y presionar siguiente avanzaremos a 
+   se presiona en siguiente y avanza al fragment SelectPaymentMethodFragment, en caso de estar vacio muestra Mensaje de Alerta.
+4) En SelectPaymentMethodFragment se selecciona el metodo de pago, para ello al presionar la opcion, nos dirige hacia 
+   la lista con stateListSelect en 1, donde podremos seleccionar el metodo, al hacerlo y presionar siguiente avanzaremos a 
    SelectCardFragment, en caso de estar vacio devuleve mensaje de alerta.
 5) En SelectCardFragment se selecciona la tarjeta, para ello al presionar la opcion, nos redirige hacia 
    la lista con stateListSelect en 2, donde podremos seleccionar, al hacerlo y presionar siguiente avanzaremos a 
@@ -41,12 +41,17 @@ Contiene 2 Archivos de tipo Activity:
    con los valores seleccionados y pone en nulo paymentMethosSelected, cardSelected, amount, payerCost, para al final redirigir a 
    AmountFragment.
    
-#### TODO:
-Por Falta de tiempo me hubiera gustado agregar y terminar:
-* Tipografia personalizada.
-* Repasar los modelados, ya que si bien los que uso estan ok, hay algunos que los hice rapido e incompleto.
-* Agregar un placeholder para cuando las listas estan vacias, ya que ahora si devuelve vacia, muestra la pantalla en blanco.
-* Agregar imagenes más ilustrativas
+#### Librerias Utilizadas:
+
+Nombre
+Version
+Funcionalidad
+|----------------|--------|----------------------------------|
+|Ion		 |2.2.1   |Utilizada para servicios API REST |
+|butterknife  	 |8.8.1   |Bindeos con xml                   |
+|recyclerview-v7 |28.0.0  |Lista Reciclable                  |
+|acplibrary 	 |1.2.1   |Loading                           |
+|Glide 	 	 |4.6.1   |Cargar imagenes enlazadas         |
 
 
 ### Autor: Ignacio Galliano

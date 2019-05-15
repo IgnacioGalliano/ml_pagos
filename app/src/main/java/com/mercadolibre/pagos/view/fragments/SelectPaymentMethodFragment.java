@@ -56,7 +56,7 @@ public class SelectPaymentMethodFragment extends Fragment {
                 if(mCallback.getPaymentMethosSelected() != null){
                     activity.switchContent( new SelectCardFragment(), true);
                 }else{
-                    activity.showAlert("Atención!","Por favor selecciona un medio de pago.");
+                    activity.showAlert("Atención!","Por favor selecciona un medio de pago.", false);
                 }
 
             }
