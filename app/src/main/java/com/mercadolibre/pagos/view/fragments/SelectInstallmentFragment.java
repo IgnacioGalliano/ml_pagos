@@ -32,17 +32,19 @@ public class SelectInstallmentFragment extends Fragment {
     DataComunication mCallback;
 
     public MainActivity activity = new MainActivity();
-    @BindView(R.id.siguienteButtonInstallment)
-    RelativeLayout siguienteButton;
-    @BindView(R.id.selectInstallmentButton)
-    FrameLayout selectInstallmentButton;
-    @BindView(R.id.textInstallment)
-    TextView textInstallment;
+
+    private RelativeLayout siguienteButton;
+    private FrameLayout selectInstallmentButton;
+    private TextView textInstallment;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_select_installment, container, false);
         ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
+
+        siguienteButton = (RelativeLayout) view.findViewById(R.id.siguienteButtonInstallment);
+        selectInstallmentButton = (FrameLayout) view.findViewById(R.id.selectInstallmentButton);
+        textInstallment = (TextView) view.findViewById(R.id.textInstallment);
 
         initListeners();
 

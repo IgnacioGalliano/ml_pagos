@@ -32,14 +32,18 @@ public class SelectCardFragment extends Fragment {
     DataComunication mCallback;
 
     public MainActivity activity = new MainActivity();
-    @BindView(R.id.siguienteButtonSC) RelativeLayout siguienteButton;
-    @BindView(R.id.selectCardButton) FrameLayout selectCardButton;
-    @BindView(R.id.textCardSelected) TextView textCardSelected;
+    private RelativeLayout siguienteButton;
+    private FrameLayout selectCardButton;
+    private TextView textCardSelected;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_select_card, container, false);
         ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
+
+        siguienteButton = (RelativeLayout) view.findViewById(R.id.siguienteButtonSC);
+        selectCardButton = (FrameLayout) view.findViewById(R.id.selectCardButton);
+        textCardSelected = (TextView) view.findViewById(R.id.textCardSelected);
 
         initListeners();
 

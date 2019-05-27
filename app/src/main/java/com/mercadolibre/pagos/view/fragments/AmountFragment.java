@@ -34,13 +34,15 @@ public class AmountFragment extends Fragment {
     DataComunication mCallback;
     public MainActivity activity = new MainActivity();
 
-    @BindView(R.id.siguienteButton) RelativeLayout siguienteButton;
-    @BindView(R.id.amount) EditText amountText;
-
+    private RelativeLayout siguienteButton;
+    private EditText amountText;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_amount, container, false);
         ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
+
+        siguienteButton = (RelativeLayout) view.findViewById(R.id.siguienteButton);
+        amountText = (EditText) view.findViewById(R.id.amount);
 
 
         initListeners();
