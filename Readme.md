@@ -43,9 +43,7 @@ Contiene 2 Archivos de tipo Activity:
    
 #### Librerias Utilizadas:
 
-Nombre
-Version
-Funcionalidad
+Nombre|Version|Funcionalidad
 |----------------|--------|----------------------------------|
 |Ion		 |2.2.1   |Utilizada para servicios API REST |
 |butterknife  	 |8.8.1   |Bindeos con xml                   |
