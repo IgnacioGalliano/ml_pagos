@@ -46,7 +46,6 @@ Contiene 2 Archivos de tipo Activity:
 Nombre|Version|Funcionalidad
 |----------------|--------|----------------------------------|
 |Ion		 |2.2.1   |Utilizada para servicios API REST |
-|butterknife  	 |8.8.1   |Bindeos con xml                   |
 |recyclerview-v7 |28.0.0  |Lista Reciclable                  |
 |acplibrary 	 |1.2.1   |Loading                           |
 |Glide 	 	 |4.6.1   |Cargar imagenes enlazadas         |

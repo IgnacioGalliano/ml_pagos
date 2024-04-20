@@ -21,9 +21,6 @@ import com.mercadolibre.pagos.R;
 import com.mercadolibre.pagos.view.MainActivity;
 import com.mercadolibre.pagos.view.interfaces.DataComunication;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * Create By Ignacio Galliano
  */
@@ -38,7 +35,6 @@ public class SelectCardFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_select_card, container, false);
-        ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
 
         siguienteButton = (RelativeLayout) view.findViewById(R.id.siguienteButtonSC);

@@ -17,14 +17,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.mercadolibre.pagos.R;
 import com.mercadolibre.pagos.view.MainActivity;
 import com.mercadolibre.pagos.view.interfaces.DataComunication;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created By Ignacio Galliano
@@ -38,7 +34,6 @@ public class AmountFragment extends Fragment {
     private EditText amountText;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_amount, container, false);
-        ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
 
         siguienteButton = (RelativeLayout) view.findViewById(R.id.siguienteButton);

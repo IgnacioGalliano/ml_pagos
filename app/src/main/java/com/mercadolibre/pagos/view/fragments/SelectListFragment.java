@@ -35,8 +35,6 @@ import com.mercadolibre.pagos.models.PaymentMethods;
 
 import java.util.ArrayList;
 
-import butterknife.ButterKnife;
-
 /**
  * Created By Ignacio Galliano
  */
@@ -52,7 +50,6 @@ public class SelectListFragment extends Fragment implements ListSelectedCallList
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_select_list, container, false);
-        ButterKnife.bind(this, view);
         mCallback = (DataComunication) getContext();
         recyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
         layoutManager = new LinearLayoutManager(getActivity());
